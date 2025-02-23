@@ -22,16 +22,17 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 function toggleAnswer(element) {
   const answer = element.nextElementSibling;
-  const buttonImg = element.querySelector(".toggle-button img"); 
+  const buttonImg = element.querySelector(".toggle-button img");
 
   if (answer.style.display === "none" || answer.style.display === "") {
     answer.style.display = "block";
-    buttonImg.src = "/img/faq/arrow.png"; 
+    buttonImg.style.transform = "rotate(0deg)"; 
   } else {
     answer.style.display = "none";
-    buttonImg.src = "/img/faq/icon.png"; 
+    buttonImg.style.transform = "rotate(180deg)"; 
   }
 }
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
